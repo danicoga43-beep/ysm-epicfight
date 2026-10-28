@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "symbols": [
+    {
+      "key": "ysm.player_state.model_id_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.player_state.model_disabled_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.model_manager.model_lookup.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.model_container.data_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.model_container.resources_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.model_resources.sounds_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.audio_stream_cache.acquire.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.audio_stream_provider.open.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.model_data.textures_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.texture_cache.acquire.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.texture_cache.location_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.client.renderer.model_preview.render_player_overlay.method",
+      "kind": "METHOD",
+      "required": true,
+      "sourceAlias": {
+        "common": {
+          "owner": "net/okitsu/ysmepicfightcompat/ysmref/ModelPreviewRendererAlias",
+          "name": "renderPlayerOverlay",
+          "descriptor": "(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/player/LocalPlayer;FFFFIF)V"
+        }
+      }
+    },
+    {
+      "key": "ysm.player_state.capability.class",
+      "kind": "CLASS",
+      "required": true,
+      "sourceAlias": {
+        "common": {
+          "owner": "net/okitsu/ysmepicfightcompat/ysmref/PlayerStateCapabilityAlias"
+        }
+      }
+    },
+    {
+      "key": "ysm.player_state.active_animation_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.molang.ground_speed2.query.method",
+      "kind": "METHOD",
+      "required": false
+    },
+    {
+      "key": "ysm.molang.query.context_get.method",
+      "kind": "METHOD",
+      "required": false
+    },
+    {
+      "key": "ysm.player_state.animation_playing_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.player_state.animation_stop_packet_factory.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.player_state.animation_stop_sender.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.player_state.roaming_provider_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.player_state.roaming_value_getter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.player_state.roaming_value_setter.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.player_state.roaming_name_hasher.method",
+      "kind": "METHOD",
+      "required": true
+    },
+    {
+      "key": "ysm.animation_context.roaming_provider_binder.method",
+      "kind": "METHOD",
+      "required": true,
+      "sourceAlias": {
+        "common": {
+          "owner": "net/okitsu/ysmepicfightcompat/ysmref/AnimationContextAlias",
+          "name": "bindRoamingProvider",
+          "descriptor": "(Ljava/lang/Object;)V"
+        }
+      }
+    },
+    {
+      "key": "ysm.client.animation_roulette.configuration_expression.method",
+      "kind": "METHOD",
+      "required": true,
+      "sourceAlias": {
+        "common": {
+          "owner": "net/okitsu/ysmepicfightcompat/ysmref/AnimationRouletteScreenAlias",
+          "name": "executeConfigurationExpression",
+          "descriptor": "(Ljava/lang/String;Ljava/util/function/Consumer;)V"
+        }
+      }
+    },
+    {
+      "key": "ysm.client.renderer.custom_projectile.render.method",
+      "kind": "METHOD",
+      "required": true,
+      "sourceAlias": {
+        "common": {
+          "owner": "net/okitsu/ysmepicfightcompat/ysmref/CustomProjectileRendererAlias",
+          "name": "renderProjectile",
+          "descriptor": "(Lnet/minecraft/world/entity/projectile/Projectile;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)Z"
+        }
+      }
+    },
+    {
+      "key": "ysm.client.renderer.custom_fishing_hook.render.method",
+      "kind": "METHOD",
+      "required": true,
+      "sourceAlias": {
+        "common": {
+          "owner": "net/okitsu/ysmepicfightcompat/ysmref/CustomFishingHookRendererAlias",
+          "name": "tryRenderCustomHook",
+          "descriptor": "(Lnet/minecraft/world/entity/projectile/FishingHook;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)Z"
+        }
+      }
+    },
+    {
+      "key": "ysm.client.renderer.custom_vehicle.render.method",
+      "kind": "METHOD",
+      "required": true,
+      "sourceAlias": {
+        "common": {
+          "owner": "net/okitsu/ysmepicfightcompat/ysmref/CustomVehicleRendererAlias",
+          "name": "renderVehicle",
+          "descriptor": "(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)Z"
+        }
+      }
+    },
+    {
+      "key": "ysm.client.renderer.model_preview.render_vehicle.method",
+      "kind": "METHOD",
+      "required": true,
+      "sourceAlias": {
+        "common": {
+          "owner": "net/okitsu/ysmepicfightcompat/ysmref/ModelPreviewRendererAlias",
+          "name": "renderVehicleModel",
+          "descriptor": "(Lnet/minecraft/world/entity/Entity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+        }
+      }
+    }
+  ],
+  "mixinRequirements": {
+    "net.okitsu.ysmepicfightcompat.mixin.CombatOverlayMixin": [
+      "ysm.client.renderer.model_preview.render_player_overlay.method"
+    ],
+    "net.okitsu.ysmepicfightcompat.mixin.PlayerStateCapabilityMixin": [
+      "ysm.player_state.capability.class"
+    ],
+    "net.okitsu.ysmepicfightcompat.mixin.YsmConfigurationExpressionMixin": [
+      "ysm.client.animation_roulette.configuration_expression.method"
+    ],
+    "net.okitsu.ysmepicfightcompat.mixin.YsmRoamingProviderBindingMixin": [
+      "ysm.animation_context.roaming_provider_binder.method"
+    ],
+    "net.okitsu.ysmepicfightcompat.mixin.YsmProjectileRendererMixin": [
+      "ysm.client.renderer.custom_projectile.render.method"
+    ],
+    "net.okitsu.ysmepicfightcompat.mixin.YsmFishingHookRendererMixin": [
+      "ysm.client.renderer.custom_fishing_hook.render.method"
+    ],
+    "net.okitsu.ysmepicfightcompat.mixin.YsmVehicleRendererMixin": [
+      "ysm.client.renderer.custom_vehicle.render.method"
+    ],
+    "net.okitsu.ysmepicfightcompat.mixin.YsmVehiclePreviewMixin": [
+      "ysm.client.renderer.model_preview.render_vehicle.method"
+    ]
+  }
+}

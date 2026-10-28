@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": ["${mod_authors}"],
+  "license": "${mod_license}",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["net.okitsu.ysmepicfightcompat.CompatMod"],
+    "client": ["net.okitsu.ysmepicfightcompat.client.CompatClient"]
+  },
+  "mixins": ["ysm_epicfight_compat.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "forgeconfigapiport": "*",
+    "yes_steve_model": ">=2.6.0",
+    "epicfight": "*",
+    "ysm_mapping_api": "*"
+  },
+  "suggests": {
+    "touhou_little_maid": "*",
+    "modmenu": "*"
+  }
+}
