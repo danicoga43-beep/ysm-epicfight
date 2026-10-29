@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "ysm_epicfight_compat",
+  "version": "${version}",
+  "name": "YSM Epic Fight Compat (Fabric)",
+  "description": "Uses Fox Model Loader player models with Epic Fight combat rendering, animation variables, ground speed, textures, and model audio on Fabric 1.21.1.",
+  "authors": [
+    "Asli: sakuraimikoto33 (MIT)",
+    "Port: pengguna"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.okitsu.ysmepicfightcompat.fabric.CompatModFabric"
+    ],
+    "client": [
+      "net.okitsu.ysmepicfightcompat.fabric.CompatModFabricClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "forgeconfigapiport": ">=21.1.6",
+    "epicfight": "*",
+    "yes_steve_model": "*"
+  },
+  "mixins": [
+    "ysm_epicfight_compat.mixins.json"
+  ]
+}
