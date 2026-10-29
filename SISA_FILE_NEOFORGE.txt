@@ -1,7 +1,0 @@
-Tidak ada file yang bergantung pada NeoForge.
-
-3 file di bawah masih memakai nama paket `net.neoforged...` karena Forge Config API Port (mod Fabric, wajib untuk Epic Fight dan
-Fox Model Loader) menyediakan ModConfigSpec / ModConfig dengan nama paket itu. Ini bukan dependensi NeoForge:
-net/okitsu/ysmepicfightcompat/config/ClientPreferences.java
-net/okitsu/ysmepicfightcompat/config/OptionalModConfig.java
-net/okitsu/ysmepicfightcompat/config/ServerPreferences.java
